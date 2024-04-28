@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  visibility: 0;
+}
+
+.content {
+  display: flex;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgb(42, 43, 43);
+  opacity: 1;
+}
+.text {
+  font-size: 26px;
+  font-weight: 600;
+  background: rgb(214, 214, 224);
+  background: linear-gradient(
+    71deg,
+    rgba(214, 214, 224, 1) 5%,
+    rgba(152, 211, 124, 1) 46%,
+    rgba(81, 224, 167, 1) 96%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  background: rgb(214, 214, 224);
+  background: linear-gradient(
+    71deg,
+    rgba(214, 214, 224, 1) 5%,
+    rgba(152, 211, 124, 1) 46%,
+    rgba(81, 224, 167, 1) 96%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.logo img {
+  height: 70px; /* Adjust the height of the logo */
+  width: 150px;
+  filter: drop-shadow(
+    2px 2px 4px rgba(0, 0, 0, 0.5)
+  ); /* Add drop shadow to the logo */
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f7fbbeb0;
+  padding: 10px 15px; /* Increase padding for better spacing */
+  border-radius: 5px;
+  font-size: 18px; /* Increase font size */
+  font-family: "Arial", sans-serif; /* Change font family */
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(232, 213, 174, 0.47);
+}
+
+main {
+  padding: 20px;
+}
+
+.content {
+  /* display: block;   */
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  width: 50%;
+}
+
+.images {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  width: calc(33.33% - 10px); /* Adjusted image width */
+  position: relative;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%; /* Adjusted image width */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.image:hover img {
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.follow {
+  text-align: center;
+  padding: 20px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.follow button {
+  background-color: #18bfc8c5;
+  color: #faf4f4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.follow button:hover {
+  background: transparent;
+  box-shadow: 1px 1px 25px 10px rgb(8, 229, 245);
+}
+.follow button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+.follow:hover::before{
+  box-shadow: 0 0 20px 5px #00fffc;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a{
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.image {
+  margin: 10px;
+  /* height: inherit; */
+  /* border: 1px solid #ccc; */
+  box-shadow: 0 0 5px rgba(251, 249, 249, 0.041);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+/* heading in the art gallery h3 h4 h5 */
+.hd3 {
+  margin-left: 28%;
+  font-size: 35px;
+  font-weight: 600;
+  background: rgb(214, 214, 224);
+  background: linear-gradient(
+    71deg,
+    rgba(214, 214, 224, 1) 5%,
+    rgba(152, 211, 124, 1) 46%,
+    rgba(81, 224, 167, 1) 96%
+  );
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  margin-top: -5%;
+}
+.hd4 {
+  margin-left: 37%;
+  font-size: 60px;
+  font-weight: 600;
+  background: rgb(214, 214, 224);
+  background: linear-gradient(
+    71deg,
+    rgba(214, 214, 224, 1) 5%,
+    rgba(152, 211, 124, 1) 46%,
+    rgba(81, 224, 167, 1) 96%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  margin-top: -2%;
+}
+
+.hd5 {
+  font-size: 25px;
+  background-color: rgb(42, 43, 43);
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin-top: 7%;
+  margin-left: 10%;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: flex;
+  height: fit-content;
+  width: 99%;
+  margin: 15vw 0;
+  color: white;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.cardiB {
+  display: flex;
+  width: 20%;
+  aspect-ratio: 0.75;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  display: flex;
+  width: 20%;
+  aspect-ratio: 0.75;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#GalleryMaker {
+  background-color: #090909;
+  color: #faf4f4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 50vw;
+  height: 10vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  bottom: 15vh;
+  left: 25vw;
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#GalleryMaker::before{
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(120deg, transparent,#00fffc,transparent);
+  transform: translateX(-100%);
+  transition: 0.5s;
+  position: absolute;
+}
+#GalleryMaker:hover{
+  background: transparent;
+  box-shadow: 0 0 20px 5px #00fffc;
+}
+
+.card > img {
+  aspect-ratio: 0.75;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardiB > img {
+  aspect-ratio: 0.75;
+  width: 100%;
+  object-fit: cover;
+}
+
+.scale {
+  animation: scale 200ms ease-out;
+  transform: scale(1.1);
+}
+
+.unScale {
+  animation: unScale 200ms ease-in;
+  transform: scale(1);
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes unScale {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  padding: 5vw;
+  margin: 10vh 0vw;
+  gap: 3vw;
+  column-gap: 8vw;
+  align-items: center;
+  justify-content: center;
+}
+
+#container > .supportCard {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 10%;
+  aspect-ratio: 1/0.65;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  color: white;
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+}
+
+.supportCard > .title {
+  font-size: larger;
+  color: white;
+  margin-top: 0%;
+}
+
+.supportCard > .desc {
+  padding: 5%;
+  text-align: center;
+  font-size: large;
+  margin-top: 30px;
+  margin-top: 0%;
+  background: transparent;
+}
+
+.title {
+  font-size: 300%;
+  text-align: center;
+  margin-top: -120px;
+  color: white;
+  background-color: rgb(42, 43, 43);
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.desc {
+  margin-top: -40px;
+  font-size: 200%;
+  text-align: center;
+  color: white;
+  background: linear-gradient(
+    71deg,
+    rgba(214, 214, 224, 1) 5%,
+    rgba(152, 211, 124, 1) 46%,
+    rgba(81, 224, 167, 1) 96%
+  );
+  border-radius: 15px; /* Adjust the value to change the curvature */
+}
+
+.puppy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+  border: 3px solid #f90473;
+  color: #f90473;
+  border-radius: 5px;
+}
+
+#bg-video {
+  object-fit: cover;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#contact{
+  width: fit-content;
+  margin-left: 42%;
+}
+
+.contact {
+  font-size: 150%;
+  background-color: rgb(42, 43, 43);
+  margin-left: 45%;
+  color: white;
+  width: fit-content;
+  text-align: center;
+  border-radius: 9px;
+}
+
+.email{
+  margin-left: 37%;
+}
+
+.puppy > a{
+  text-decoration: none;
+  color: #f90473 !important;
+  background-color: transparent;
+}
